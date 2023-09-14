@@ -6,6 +6,6 @@ fun onlineSell () {
     var workMan = 2000
     println(onlineOrdering)
     println(textThanks)
-    //println(workMan)
+    /*println(workMan)*/
     workMan = 1999
 }
