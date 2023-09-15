@@ -1,6 +1,6 @@
 package lesson1
 
-fun onlineSells () {
+fun main () {
     val onlineOrdering = 75
     val textThanks ="Спасибо за покупку !"
     var workMan: Int = 2000
