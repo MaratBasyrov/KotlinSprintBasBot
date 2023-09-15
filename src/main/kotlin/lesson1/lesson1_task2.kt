@@ -6,6 +6,6 @@ fun main () {
     var workMan = 2000
     println(onlineOrderings)
     println(textThankss)
-    println(workMan)
+    //println(workMan)
     workMan = 1999
 }
