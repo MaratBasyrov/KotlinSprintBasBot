@@ -1,11 +1,11 @@
 package lesson1
 
 fun main () {
-    val onlineOrdering = 75
-    val textThanks ="Спасибо за покупку !"
+    val onlineOrderings = 75
+    val textThankss ="Спасибо за покупку !"
     var workMan = 2000
-    println(onlineOrdering)
-    println(textThanks)
+    println(onlineOrderings)
+    println(textThankss)
     //println(workMan)
     workMan = 1999
 }
