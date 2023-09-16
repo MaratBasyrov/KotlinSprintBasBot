@@ -1,6 +1,6 @@
 package lesson3
 
-fun main(){
+fun main() {
     var girlName = "Татьяна"
     var girlSurnameBefor = "Андреева"
     var girlSurnameNow = "Сидорова"
