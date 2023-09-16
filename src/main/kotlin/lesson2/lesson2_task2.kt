@@ -1,6 +1,6 @@
 package lesson2
 
-fun main(){
+fun main() {
 
     var workers = 50
     var interns = 30
