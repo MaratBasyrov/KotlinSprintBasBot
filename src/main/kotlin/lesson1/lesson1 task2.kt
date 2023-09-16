@@ -1,6 +1,6 @@
 package lesson1
 
-fun main () {
+fun main() {
     val onlineOrderings = 75
     val textThankss = "Спасибо за покупку !"
     var workMan = 2000
