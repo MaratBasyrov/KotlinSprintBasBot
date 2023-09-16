@@ -1,6 +1,6 @@
 package lesson1
 
-fun onlineSell () {
+fun main () {
     var onlineOrdering = 75
     val textThanks ="Спасибо за покупку!"
 }
