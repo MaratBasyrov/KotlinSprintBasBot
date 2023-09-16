@@ -1,6 +1,6 @@
 package lesson2
 
-fun main(){
+fun main() {
     var crystalMineral: Float = 7f
     var ironMineral: Float = 11f
     var baff: Float = 20f
