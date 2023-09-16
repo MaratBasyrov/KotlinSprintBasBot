@@ -1,6 +1,6 @@
 package lesson3
 
-fun main(){
+fun main() {
     var number: Int
     number = 9
     var multiply = """
