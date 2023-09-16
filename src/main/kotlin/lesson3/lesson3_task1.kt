@@ -1,6 +1,6 @@
 package lesson3
 
-fun main(){
+fun main() {
 
     var helloDay = "Добрый день,"
     var helloNight = "Доброй ночи,"
