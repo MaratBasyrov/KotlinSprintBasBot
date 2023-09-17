@@ -1,6 +1,6 @@
 package lesson3
 
-fun main(){
+fun main() {
     var positionStart: String
     var positionEnd: String
     var numberMotion: Int
@@ -10,6 +10,6 @@ fun main(){
     numberMotion = 1
 
     println("$positionStart , $positionEnd, ход номер $numberMotion")
-    println("Если фигура на D2 , то при перемещении на 1 клетку откажется на D3")
+    println("Если фигура на D2 , то при перемещении на 1 клетку окажется на D3")
 
 }
