@@ -1,13 +1,13 @@
 package lesson2
 
 fun main() {
-    var crystalMineral: Float = 7f
-    var ironMineral: Float = 11f
-    var baff: Float = 20f
+    val crystalMineral: Float = 7f
+    val ironMineral: Float = 11f
+    val baff: Float = 20f
 
-    var baffCrystalMineral = crystalMineral + (crystalMineral / 100) * baff
-    var baffIronMineral = ironMineral + (ironMineral / 100) * baff
+    val baffCrystalMineral: Int = (crystalMineral * baff / 100.0f).toInt()
+    val baffIronMineral: Int = (ironMineral * baff / 100.0f).toInt()
 
-    println("кристалической руды с учетом баффа $baffCrystalMineral")
-    println("метллической руды с учетом баффа $baffIronMineral")
+    println("Бонусная кристалическая руда $baffCrystalMineral")
+    println("Бонусная метллическая руда $baffIronMineral")
 }
