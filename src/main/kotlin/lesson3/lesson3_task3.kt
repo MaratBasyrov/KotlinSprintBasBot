@@ -1,9 +1,8 @@
 package lesson3
 
 fun main() {
-    var number: Int
-    number = 9
-    var multiply = """
+    val number = 9
+    val multiply = """
         $number * 1 = ${number * 1}
         $number * 2 = ${number * 2}
         $number * 3 = ${number * 3}
