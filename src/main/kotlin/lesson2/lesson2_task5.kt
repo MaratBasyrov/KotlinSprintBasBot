@@ -9,7 +9,6 @@ fun main() {
     percent = (1 + percent / 100)
     var a: Double = percent.pow(year)
     var gain: Double = clientSum * a
-    //var b = gain.toFloat()
 
     println(" Ваш доход за $year лет равен ${"%.3f".format(gain)}")
 }
