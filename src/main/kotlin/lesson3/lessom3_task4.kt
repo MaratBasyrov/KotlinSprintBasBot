@@ -5,6 +5,9 @@ fun main() {
     val positionEnd = "E4"
     val numberMotion = 1
 
+    val positionStartTwo = "D2"
+    val positionEndTwo = "D3"
+
     println("$positionStart , $positionEnd, ход номер $numberMotion")
-    println("Если фигура на D2 , то при перемещении на 1 клетку окажется на D3")
+    println("Если фигура на $positionStartTwo , то при перемещении на 1 клетку окажется на $positionEndTwo")
 }
