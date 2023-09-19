@@ -1,20 +1,22 @@
 package lesson4
 
 fun main() {
-    val trainingDay = 5
+    val trainingDay = 2
 
-    val exerciseHand = 1
-    val exercisePress = 1
+    val divisible = trainingDay % 2
 
-    val exerciseLeg = 2
-    val exerciseBack = 2
+    val exerciseHand: Boolean = (divisible !== 0)
+    val exercisePress: Boolean = (divisible !== 0)
+
+    val exerciseLeg: Boolean = (divisible == 0)
+    val exerciseBack: Boolean = (divisible == 0)
 
     println(
         """
-        Упражнения для рук: ${trainingDay / exerciseHand == trainingDay}
-        Упражнения для ног: ${trainingDay / exerciseLeg == trainingDay}
-        Упражнения для спины: ${trainingDay / exerciseBack == trainingDay}
-        Упражнения для пресса: ${trainingDay / exercisePress == trainingDay}
+        Упражнения для рук: $exerciseHand
+        Упражнения для ног: $exerciseLeg
+        Упражнения для спины: $exerciseBack
+        Упражнения для пресса: $exercisePress
     """.trimIndent()
     )
 }
