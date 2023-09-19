@@ -1,15 +1,15 @@
 package lesson4
 
 fun main() {
-    val trainingDay = 2
+    val trainingDay = 1
 
-    val divisible = trainingDay % 2
+    val divisible = trainingDay % 2 == 0
 
-    val exerciseHand: Boolean = (divisible !== 0)
-    val exercisePress: Boolean = (divisible !== 0)
+    val exerciseHand: Boolean = !divisible
+    val exercisePress: Boolean = !divisible
 
-    val exerciseLeg: Boolean = (divisible == 0)
-    val exerciseBack: Boolean = (divisible == 0)
+    val exerciseLeg: Boolean = divisible
+    val exerciseBack: Boolean = divisible
 
     println(
         """
