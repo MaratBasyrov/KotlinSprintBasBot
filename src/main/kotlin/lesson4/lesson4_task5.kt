@@ -2,12 +2,6 @@ package lesson4
 
 fun main() {
 
-    val damage: Boolean = false
-    val crewMin: Int = 55
-    val crewMax: Int = 70
-    val food: Int = 50
-    val weather: Boolean = true
-
     print("Имеюются ли повреждения: ")
     val enterDamage = readln().toBoolean()
     print("Количество экипажа: ")
@@ -17,10 +11,16 @@ fun main() {
     print("Хорошие погодные условия: ")
     val enterWeather: Boolean = readln().toBoolean()
 
-    if ((enterDamage == damage) && (enterCrew in crewMin..crewMax) && (enterFood >= food) && (enterWeather == weather))
+    if ((enterDamage == IS_DAMAGE) && (enterCrew in CREW_MIN..CREW_MAX) && (enterFood >= FOOD) && (enterWeather == IS_WEATHER))
         println("Корабль может отправиться в путешествие")
-    if ((enterDamage !== damage) && (enterCrew in crewMin..crewMax) && (enterFood >= food) && (enterWeather == weather))
+    if ((enterDamage !== IS_DAMAGE) && (enterCrew in CREW_MIN..CREW_MAX) && (enterFood >= FOOD) && (enterWeather == IS_WEATHER))
         println("Корабль может отправиться в путешествие Альтернативно")
     else println("К сожалению, поездка невозможна")
 
 }
+
+val IS_DAMAGE: Boolean = false
+val CREW_MIN: Int = 55
+val CREW_MAX: Int = 70
+val FOOD: Int = 50
+val IS_WEATHER: Boolean = true
