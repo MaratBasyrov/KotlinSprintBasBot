@@ -14,9 +14,9 @@ fun main() {
     if ((isEnterDamage == IS_DAMAGE) && (enterCrew in CREW_MIN..CREW_MAX) && (enterFood >= FOOD) && (isEnterWeather == IS_WEATHER))
         println("Корабль может отправиться в путешествие")
     else
-    if ((isEnterDamage !== IS_DAMAGE) && (enterCrew in CREW_MIN..CREW_MAX) && (enterFood >= FOOD) && (isEnterWeather == IS_WEATHER))
-        println("Корабль может отправиться в путешествие Альтернативно")
-    else println("К сожалению, поездка невозможна")
+        if ((isEnterDamage !== IS_DAMAGE) && (enterCrew in CREW_MIN..CREW_MAX) && (enterFood >= FOOD) && (isEnterWeather == IS_WEATHER))
+            println("Корабль может отправиться в путешествие Альтернативно")
+        else println("К сожалению, поездка невозможна")
 
 }
 
