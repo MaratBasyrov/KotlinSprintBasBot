@@ -3,10 +3,10 @@ package lesson5
 fun main() {
 
     print("Введи год Вашего рождения : ")
-    val data_birth = readln().toInt()
+    val dataBirth = readln().toInt()
 
     val yearNow = 2023
-    val ageNow = yearNow - data_birth
+    val ageNow = yearNow - dataBirth
 
     if (ageNow >= AGE_MIN)
         println("Показать экран со скрытым контентом")
