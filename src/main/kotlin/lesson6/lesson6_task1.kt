@@ -11,7 +11,7 @@ fun main() {
     print("Введите пароль : ")
     var enterPassword: String = readln()
 
-    while ((enterLogin != clientLogin) && (enterPassword != clientPassword)) {
+    while ((enterLogin != clientLogin) || (enterPassword != clientPassword)) {
         println("Данные не совпадают, попробуйте еще раз ")
         print("Введите логин : ")
         enterLogin = readln()
