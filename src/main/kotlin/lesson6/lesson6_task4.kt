@@ -8,20 +8,22 @@ fun main() {
     var enterNumber = readln().toInt()
 
     if (enterNumber == numberGeneration) {
-        println("победа")
+        println("Это была великолепная игра!")
 
     } else {
         --numberAttempts
         while (numberAttempts > 0) {
-            print("$numberGeneration попробуйте еще раз: ")
+            print("$numberGeneration осталось $numberAttempts попыток, попробуйте еще раз: ")
             enterNumber = readln().toInt()
             if (enterNumber == numberGeneration) {
                 println("это победа")
                 break
             }
             numberAttempts--
+            if (numberAttempts == 0)
+                println("Проиграли, было загадано $numberGeneration")
         }
-        println("проиграли, было загадано $numberGeneration")
+
     }
     println("Игра окончена")
 }
