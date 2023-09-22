@@ -13,7 +13,7 @@ fun main() {
     } else {
         --numberAttempts
         while (numberAttempts > 0) {
-            print("$numberGeneration осталось $numberAttempts попыток, попробуйте еще раз: ")
+            print("осталось $numberAttempts попыток, попробуйте еще раз: ")
             enterNumber = readln().toInt()
             if (enterNumber == numberGeneration) {
                 println("это победа")
