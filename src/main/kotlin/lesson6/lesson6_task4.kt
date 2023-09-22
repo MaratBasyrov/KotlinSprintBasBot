@@ -24,5 +24,4 @@ fun main() {
          println("проиграли, было загадано $numberGeneration")
          }
     println("Игра окончена")
-
 }
