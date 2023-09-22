@@ -19,4 +19,5 @@ fun main() {
         enterPassword = readln()
     }
     println("Авторизация прошла успешно")
+
 }
