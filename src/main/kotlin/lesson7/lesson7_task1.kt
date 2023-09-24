@@ -1,3 +1,4 @@
+
 package lesson7
 
 fun main() {
@@ -9,4 +10,3 @@ fun main() {
     val passwordNumberThree = (0..9).random().toString()
     println("$passwordCharOne$passwordNumberOne$passwordCharTwo$passwordNumberTwo$passwordCharThree$passwordNumberThree")
 }
-
