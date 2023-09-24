@@ -14,7 +14,7 @@ fun main() {
             break
         } else if (numberAttempts > 0) {
             print("$numberGeneration Осталось $numberAttempts потыток, попробуйте еще : ")
-        } else println("игра окончена")
+        } else println("игра окончена, было загадано число $numberGeneration")
     }
 
 }
