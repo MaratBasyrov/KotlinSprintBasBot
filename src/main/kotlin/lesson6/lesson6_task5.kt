@@ -27,8 +27,8 @@ fun main() {
         var numberRandomOne = (1..9).random()
         var numberRandomTwo = (1..9).random()
         print("Cложите число $numberRandomOne и $numberRandomTwo = ")
-        var otvet = readln().toInt()
-        if (otvet == numberRandomOne + numberRandomTwo) {
+        var answer = readln().toInt()
+        if (answer == numberRandomOne + numberRandomTwo) {
             println("Добро пожаловть!")
             break
         } else if (attemptNumber != 0) {
