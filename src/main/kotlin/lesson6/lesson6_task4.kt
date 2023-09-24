@@ -5,25 +5,16 @@ fun main() {
     var numberAttempts = 5
 
     print("Угадайте число от 1 до 9 : ")
-    var enterNumber = readln().toInt()
 
-    if (enterNumber == numberGeneration) {
-        println("Это была великолепная игра!")
-
-    } else {
-        --numberAttempts
-        while (numberAttempts > 0) {
-            print("осталось $numberAttempts попыток, попробуйте еще раз: ")
-            enterNumber = readln().toInt()
-            if (enterNumber == numberGeneration) {
-                println("это победа")
-                break
-            }
-            numberAttempts--
-            if (numberAttempts == 0)
-                println("Проиграли, было загадано $numberGeneration")
-        }
-
+    while (numberAttempts > 0) {
+        var enterNumber = readln().toInt()
+        numberAttempts--
+        if (enterNumber == numberGeneration) {
+            println("Это была великолепная игра!")
+            break
+        } else if (numberAttempts > 0) {
+            print("$numberGeneration Осталось $numberAttempts потыток, попробуйте еще : ")
+        } else println("игра окончена")
     }
-    println("Игра окончена")
+
 }
