@@ -1,7 +1,7 @@
 package lesson8
 
 fun main() {
-    var ingredients = arrayOf("чеснок", "соль", "лук", "вода", "перец")
+    val ingredients = arrayOf("чеснок", "соль", "лук", "вода", "перец")
     for (i in ingredients) {
         print("$i ")
     }
