@@ -6,12 +6,12 @@ fun main() {
         print("$i ")
     }
     print("\nКакой ингредиент хотите заменить: ")
-    var enterRenameIngredients = readln().toString()
+    val enterRenameIngredients = readln()
     if (enterRenameIngredients in ingredients) {
-        var index1 = ingredients.indexOf(enterRenameIngredients)
+        val newIndex = ingredients.indexOf(enterRenameIngredients)
         print("на какой хотите заменть: ")
-        val enterNewIngredient = readln().toString()
-        ingredients.set(index1, enterNewIngredient)
+        val enterNewIngredient = readln()
+        ingredients[newIndex] = enterNewIngredient
         print("новый массив : ")
         for (i in ingredients) {
             print("$i ")
