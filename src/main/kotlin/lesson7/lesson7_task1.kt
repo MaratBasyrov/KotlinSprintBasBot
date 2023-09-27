@@ -1,4 +1,3 @@
-
 package lesson7
 
 fun main() {
