@@ -12,8 +12,8 @@ fun main() {
     Желате добавить еще ?
     """.trimIndent()
     )
-    when (val answer = readln()) {
-        "да" -> print("какой ингредиент хотите добавить :")
+    when (val answer = readln().equals("ДА", true)) {
+        answer -> print("какой ингредиент хотите добавить :")
         else -> return
     }
     val newIgredient = readln()
