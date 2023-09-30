@@ -31,5 +31,4 @@ class UserData(
     fun enterUserMassage(message: String) {
         println(message)
     }
-
 }

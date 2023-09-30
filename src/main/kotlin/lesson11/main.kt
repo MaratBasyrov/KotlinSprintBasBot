@@ -12,5 +12,4 @@ fun main() {
     userOne.enterBio()
     userOne.enterNewPassword()
     userOne.enterUserMassage("привет")
-
 }
