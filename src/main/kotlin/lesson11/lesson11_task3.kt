@@ -6,7 +6,7 @@ fun main() {
     val roomUsa: Rooms = Rooms("Обложка №1", "комната американцев", mapUsa)
     val roomRus: Rooms = Rooms("Обложка №2", "комната россиян", mapRus)
 
-    println(roomRus.onClikAvatar(mapRus.get(1), 2))
+    println(roomRus.onClikAvatar(mapRus[1], 2))
 }
 
 class Rooms(
