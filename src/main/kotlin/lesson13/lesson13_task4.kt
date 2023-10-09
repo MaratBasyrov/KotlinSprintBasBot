@@ -4,17 +4,18 @@ fun main() {
 
     var listContact: List<TelephoneContact> = mutableListOf()
 
+
     do {
         val enterContact = newContact()
         if (enterContact != null) {
-             listContact.plusElement(enterContact)
+             listContact += enterContact
         } else println("Контакт не добавлен, т.к. нет номера")
 
         println("Если хотите добавить новую запись, введите \"да\"")
 
     } while (readln().uppercase() == "ДА")
 
-   outputInformationContact(listContact) // не работает
+   outputInformationContact(listContact)
 
 
 }
