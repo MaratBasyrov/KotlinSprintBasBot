@@ -7,6 +7,4 @@ class TelephoneDir(
     val name: String,
     val numberTel: Int,
     val company: String?,
-){
-
-}
+)
