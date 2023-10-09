@@ -1,14 +1,14 @@
 package lesson13
 
 fun main() {
-    val g: TelephoneDir = TelephoneDir("Санек", 89995645330, null)
-    g.informationContact()
+    val personOne: TelephoneDir = TelephoneDir("Санек", "89995645330", null)
+    personOne.informationContact()
 
 }
 
 class TelephoneDir(
     val name: String,
-    val numberTel: Long,
+    val numberTel: String,
     val company: String?,
 ) {
     fun informationContact() {
