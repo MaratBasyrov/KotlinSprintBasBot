@@ -2,10 +2,10 @@ package lesson14
 
 fun main() {
 
-    val planetOne: Planets = Planets(
-        "Планета №4567", true, true, true, false, 2, mutableListOf(
-            Satellits("sputnik #1", true, true, true, true),
-            Satellits("sputnik #2", true, true, true, true)
+    val planetOne: Planet = Planet(
+        "Планета №4567", true, true, true, false, mutableListOf(
+            Satellit("sputnik #1", true, true, true, true),
+            Satellit("sputnik #2", true, true, true, true)
 
         )
     )
@@ -13,37 +13,33 @@ fun main() {
     planetOne.printInfoPlanets()
 }
 
-open class CelestialBodies(
+open class CelestialBodi(
     val name: String,
-    val isLife: Boolean,
-    val isAtmosphere: Boolean,
-    val isWater: Boolean,
-    val isLanding: Boolean,
+    val hasLife: Boolean,
+    val hasAtmosphere: Boolean,
+    val hasWater: Boolean,
+    val hasLanding: Boolean,
 
     )
 
-class Planets(
+class Planet(
     name: String,
-    isLife: Boolean,
-    isAtmosphere: Boolean,
-    isWater: Boolean,
-    isLanding: Boolean,
-    val numberSatellite: Int,
-    val nameSatellite: MutableList<Satellits>,
-) : CelestialBodies(name, isLife, isAtmosphere, isWater, isLanding) {
+    hasLife: Boolean,
+    hasAtmosphere: Boolean,
+    hasWater: Boolean,
+    hasLanding: Boolean,
+    val satellitesList: MutableList<Satellit>,
+) : CelestialBodi(name, hasLife, hasAtmosphere, hasWater, hasLanding) {
     fun printInfoPlanets() {
-        var a: String = ""
-        nameSatellite.forEach {
-            a += " \'${it.name}\' "
-        }
-        println("Имя планеты: \'$name\'  имеет $numberSatellite спутника ($a)")
+        var nameSatellitsFoInfo = satellitesList.joinToString { it -> it.name }
+        println("Имя планеты: \'$name\'  имеет ${satellitesList.size} спутника ($nameSatellitsFoInfo)")
     }
 }
 
-class Satellits(
+class Satellit(
     name: String,
-    isLife: Boolean,
-    isAtmosphere: Boolean,
-    isWater: Boolean,
-    isLanding: Boolean,
-) : CelestialBodies(name, isLife, isAtmosphere, isWater, isLanding)
+    hasLife: Boolean,
+    hasAtmosphere: Boolean,
+    hasWater: Boolean,
+    hasLanding: Boolean,
+) : CelestialBodi(name, hasLife, hasAtmosphere, hasWater, hasLanding)
