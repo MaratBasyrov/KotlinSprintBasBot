@@ -7,7 +7,7 @@ fun main() {
 }
 
 class PlayingDice(
-    val numberCube: Int = (1..6).random()
+    protected val numberCube: Int = (1..6).random()
 ) {
     fun showNumber() {
         println("Выпало число $numberCube")
