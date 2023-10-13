@@ -1,8 +1,8 @@
 package lesson17
 
 fun main() {
-    val f = Ship()
-    f.name = "Беда"
+    val shipOne = Ship()
+    shipOne.name = "Беда"
 }
 
 class Ship() {
