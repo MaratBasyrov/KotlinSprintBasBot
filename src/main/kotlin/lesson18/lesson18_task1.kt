@@ -8,8 +8,8 @@ fun main() {
 
 class Order(
     val numberOrder: String,
-
     ) {
+
     fun printItem(item: String) {
         println("Заказан товар: $item")
     }
