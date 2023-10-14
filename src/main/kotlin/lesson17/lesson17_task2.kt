@@ -8,7 +8,6 @@ fun main() {
 class Ship() {
     var name = "Победа"
         set(value) {
-            field = value
             println("Переименовать корабль нельзя")
         }
     val speed = 12
