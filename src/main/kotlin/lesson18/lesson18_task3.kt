@@ -2,47 +2,47 @@ package lesson18
 
 fun main() {
     val FoxOne = Fox("Лиса")
-    FoxOne.modeEat()
+    FoxOne.startEat()
     val dogOne = Dog("Собака")
-    dogOne.modeEat()
+    dogOne.startEat()
     val catOne = Cat("Кошка")
-    catOne.modeEat()
+    catOne.startEat()
 }
 
 abstract class Tamagotchi(
     val name: String,
 ) {
-    abstract val startsEating: String
-    fun modeGame() {
+    abstract val defaultFood: String
+    fun startGame() {
         println("$name - играет")
     }
 
-    fun modeSleep() {
+    fun strtSleep() {
         println("$name - спит")
     }
 
-    fun modeEat() {
-        println("$name - кушает $startsEating")
+    fun startEat() {
+        println("$name - кушает $defaultFood")
     }
 }
 
 class Fox(
     name: String,
-    ) : Tamagotchi(name) {
-    override val startsEating: String = "Ягоды"
+) : Tamagotchi(name) {
+    override val defaultFood: String = "Ягоды"
 
 }
 
 class Dog(
     name: String,
-    ) : Tamagotchi(name) {
+) : Tamagotchi(name) {
 
-    override val startsEating: String = "Кости"
+    override val defaultFood: String = "Кости"
 
 }
 
 class Cat(
     name: String,
-    ) : Tamagotchi(name) {
-    override val startsEating: String = "Рыбу"
+) : Tamagotchi(name) {
+    override val defaultFood: String = "Рыбу"
 }
