@@ -2,9 +2,9 @@ package lesson18
 
 fun main() {
     val cubOne = Cub(45)
-    val rectangleOne = Rectangle(23,45,76)
-    cubOne.squareCalculate()
-    rectangleOne.squareCalculate()
+    val rectangleOne = Rectangle(23, 45, 76)
+    cubOne.calculateSquare()
+    rectangleOne.calculateSquare()
 }
 
 abstract class Package(
@@ -13,9 +13,7 @@ abstract class Package(
     val sideThree: Int,
     val name: String,
 ) {
-    fun squareCalculate() {
-        println("$name. Площадь = ${sideOne * sideTwo}")
-    }
+    abstract fun calculateSquare()
 }
 
 class Cub(
@@ -23,7 +21,11 @@ class Cub(
     sideTwo: Int = sideOne,
     sideThree: Int = sideOne,
     name: String = "Куб",
-) : Package(sideOne, sideTwo, sideThree, name)
+) : Package(sideOne, sideTwo, sideThree, name) {
+    override fun calculateSquare() {
+        println("$name. Площадь поверхности = ${sideOne * sideOne * 6}")
+    }
+}
 
 
 class Rectangle(
@@ -31,4 +33,8 @@ class Rectangle(
     sideTwo: Int,
     sideThree: Int,
     name: String = "Прямоугольник",
-) : Package(sideOne, sideTwo, sideThree, name)
+) : Package(sideOne, sideTwo, sideThree, name) {
+    override fun calculateSquare() {
+        println("$name. Площадь поверхности = ${(sideOne * sideTwo + sideTwo * sideThree + sideOne * sideThree) * 2}")
+    }
+}
