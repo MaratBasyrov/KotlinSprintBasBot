@@ -4,7 +4,6 @@ fun main() {
     val circleOne = Circle()
     circleOne.draw(45, 6)
     circleOne.draw(34.0f,67.0f)
-
 }
 
 open class Screen() {
