@@ -1,45 +1,45 @@
 package lesson18
 
 fun main() {
-    val circleOne = Circle()
-    circleOne.draw(45, 6)
-    circleOne.draw(34.0f,67.0f)
+    val circleOne = Circle("круг")
+    val squareOne = Square("прямоугольник")
+    val pointOne = Point("точка")
+    val shapeOnSсreen = Screen()
+    shapeOnSсreen.draw(56, 89, circleOne)
+    shapeOnSсreen.draw(34.0f, 45.34f, squareOne)
+    shapeOnSсreen.draw(56, 78, pointOne)
+
 }
 
-open class Screen() {
+class Screen() {
 
-    open fun draw(xFloat: Float, yFloat: Float) {
-        println("Нарисовал $xFloat Float  и $yFloat Float")
+    fun draw(xFloat: Float, yFloat: Float, shape: Circle) {
+        println("Нарисовал $xFloat Float  и $yFloat Float для ${shape.name}")
     }
 
-    open fun draw(xInt: Int, yInt: Int) {
-        println("Нарисовал $xInt Int  и $yInt Int")
+    fun draw(xInt: Int, yInt: Int, shape: Circle) {
+        println("Нарисовал $xInt Int  и $yInt Int для ${shape.name}")
+    }
+
+    fun draw(xFloat: Float, yFloat: Float, shape: Square) {
+        println("Нарисовал $xFloat Float  и $yFloat Float для ${shape.name}")
+    }
+
+    fun draw(xInt: Int, yInt: Int, shape: Square) {
+        println("Нарисовал $xInt Int  и $yInt Int для ${shape.name}")
+    }
+
+    fun draw(xFloat: Float, yFloat: Float, shape: Point) {
+        println("Нарисовал $xFloat Float  и $yFloat Float для ${shape.name}")
+    }
+
+    fun draw(xInt: Int, yInt: Int, shape: Point) {
+        println("Нарисовал $xInt Int  и $yInt Int для ${shape.name}")
     }
 }
 
-class Circle() : Screen() {
-    override fun draw(xFloat: Float, yFloat: Float) {
-        super.draw(xFloat, yFloat)
-    }
-    override fun draw(xInt: Int, yInt: Int) {
-        super.draw(xInt, yInt)
-    }
-}
+class Circle(val name: String)
 
-class Square() : Screen() {
-    override fun draw(xFloat: Float, yFloat: Float) {
-        super.draw(xFloat, yFloat)
-    }
-    override fun draw(xInt: Int, yInt: Int) {
-        super.draw(xInt, yInt)
-    }
-}
+class Square(val name: String)
 
-class Point() : Screen() {
-    override fun draw(xFloat: Float, yFloat: Float) {
-        super.draw(xFloat, yFloat)
-    }
-    override fun draw(xInt: Int, yInt: Int) {
-        super.draw(xInt, yInt)
-    }
-}
+class Point(val name: String)
