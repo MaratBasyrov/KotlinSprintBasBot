@@ -11,11 +11,11 @@ fun main() {
     }
 }
 
-        class Robot {
-        fun sey(sentence: String) {
-            println(sentence)
-        }
-
-        fun setModifier(f: () -> Unit) {}
-
+class Robot {
+    fun sey(sentence: String) {
+        println(sentence)
     }
+
+    fun setModifier(f: () -> Unit) {}
+
+}
