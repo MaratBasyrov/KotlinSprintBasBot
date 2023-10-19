@@ -2,7 +2,6 @@ package lesson20
 
 fun main() {
     val playerOne = Player();
-
 }
 
 class Player() {
