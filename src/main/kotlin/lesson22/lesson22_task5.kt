@@ -2,7 +2,8 @@ package lesson22
 
 fun main() {
 val alphaCentauri = GalacticGuide("Alpha Centauri", "звездная система", "20-10-2023", 565454)
-    println(alphaCentauri.placeDescription)
+    val (name, description, time, distance)= alphaCentauri
+    println(description)
 }
 
 data class GalacticGuide(
